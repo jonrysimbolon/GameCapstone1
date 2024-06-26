@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">GameCapstone1</string>
+    <string name="app_name">Digimon</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="setting">setting</string>
+    <string name="digimon_title">%1$s - %2$s</string>
+    <string name="name">Nama</string>
+    <string name="level">Level</string>
 </resources>

@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "GameCapstone1"
 include(":app")
- 
+include(":core")
+include(":favorite")

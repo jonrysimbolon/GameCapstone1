@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -26,23 +27,42 @@ android {
             )
         }
     }
+    dynamicFeatures += setOf(":favorite")
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
+        freeCompilerArgs += listOf("-opt-in=kotlin.RequiresOptIn")
+    }
+
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
     }
 }
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
+    implementation(project(":core"))
+    api(libs.androidx.appcompat)
+    api(libs.material)
+    api(libs.androidx.activity)
+    api(libs.androidx.constraintlayout)
+
+    api(libs.navigation.ui.ktx)
+    api(libs.navigation.fragment.ktx)
+    api(libs.navigation.dynamic.features.fragment)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.room.test)
 }
