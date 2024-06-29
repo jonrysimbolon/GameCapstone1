@@ -46,13 +46,10 @@ jobs:
           name: Run Vulnerability Check
           command: ./gradlew dependencyCheckAnalyze
       - run:
-          name: Run Tests with Coverage
-          command: ./gradlew testDebugUnitTestCoverage
+          name: Run Tests
+          command: ./gradlew lint test
       - store_test_results:
           path: app/build/test-results
       - store_artifacts:
           path: app/build/outputs/apk/debug/
           destination: artifact-file
-      - store_artifacts:
-          path: app/build/reports/jacoco/testDebugUnitTestCoverage
-          destination: coverage-reports
