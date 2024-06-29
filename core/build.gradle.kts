@@ -63,7 +63,7 @@ dependencies {
 
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
-    ksp(libs.room.compiler) // di akhir ganti dengan ksp
+    ksp(libs.room.compiler)
     androidTestImplementation(libs.room.test)
 
     api(libs.retrofit)

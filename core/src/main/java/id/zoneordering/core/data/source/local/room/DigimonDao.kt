@@ -25,7 +25,4 @@ interface DigimonDao {
 
     @Update
     suspend fun updateFavoriteDigimon(digimon: DigimonEntity)
-
-    @Query("SELECT level FROM digimon GROUP BY level")
-    fun getAllLevel(): Flow<List<String>>
 }

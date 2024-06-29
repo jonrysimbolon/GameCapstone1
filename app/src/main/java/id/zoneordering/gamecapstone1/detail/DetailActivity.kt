@@ -33,7 +33,7 @@ class DetailActivity : AppCompatActivity() {
 
         detailDigimon = intent.parcelable<Digimon>(EXTRA_DATA) ?: emptyDigimon
 
-        title = getString(R.string.digimon_title, detailDigimon.name, detailDigimon.level)
+        title = "${detailDigimon.name} - ${detailDigimon.level}"
 
         detailViewModel.getDigimonByName(detailDigimon.name)
 
