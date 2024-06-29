@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: android-orb-v1-{{ checksum "build.gradle" }}
+          key: android-orb-v1-{{ .Branch }}  # Menggunakan nama branch untuk cache key
       - run:
           name: Chmod permissions
           command: sudo chmod +x ./gradlew
@@ -20,7 +20,7 @@ jobs:
           name: Download Dependencies
           command: ./gradlew androidDependencies
       - save_cache:
-          key: android-orb-v1-{{ checksum "build.gradle" }}
+          key: android-orb-v1-{{ .Branch }}  # Menggunakan nama branch untuk cache key
           paths:
             - ~/.android/build-cache
             - ~/.android/cache
