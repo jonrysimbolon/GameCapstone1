@@ -11,19 +11,12 @@ jobs:
       - image: circleci/android:2024.04  # Gunakan versi spesifik
     steps:
       - checkout
-      - restore_cache:
-          key: android-orb-v1-{{ .Branch }}  # Menggunakan nama branch untuk cache key
       - run:
           name: Chmod permissions
           command: sudo chmod +x ./gradlew
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
-      - save_cache:
-          key: android-orb-v1-{{ .Branch }}  # Menggunakan nama branch untuk cache key
-          paths:
-            - ~/.android/build-cache
-            - ~/.android/cache
       - run:
           name: Run Build
           command: ./gradlew build
