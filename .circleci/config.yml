@@ -1,16 +1,20 @@
 version: 2.1
+
 executors:
   java17:
     docker:
       - image: 'cimg/openjdk:17.0'
+
 orbs:
   maven: circleci/maven@1.3.0
+
 workflows:
   maven_test:
     jobs:
       - maven/test:
           command: '-X compile'
           executor: java17
+
 jobs:
   build:
     executor: android/android
@@ -24,6 +28,9 @@ jobs:
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
+      - run:
+          name: Install Maven Dependencies
+          command: mvn clean install -U -X
       - save_cache:
           key: 'android-orb-v1-{{ epoch }}'
           paths:
