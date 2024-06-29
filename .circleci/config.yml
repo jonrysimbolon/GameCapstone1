@@ -26,11 +26,12 @@ jobs:
           name: Chmod permissions
           command: sudo chmod +x ./gradlew
       - run:
-          name: Install Maven Dependencies
-          command: mvn clean install -U -X
+          name: Navigate to Project Directory
+          command: cd GameCapstone1
       - run:
-          name: Download Dependencies
-          command: ./gradlew androidDependencies
+          name: Install Maven Dependencies
+          command: |
+            mvn clean install -U -X
       - save_cache:
           key: 'android-orb-v1-{{ epoch }}'
           paths:
