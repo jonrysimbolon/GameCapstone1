@@ -8,7 +8,7 @@ executors:
 jobs:
   build:
     docker:
-      - image: circleci/android:2022.10.1
+      - image: circleci/android:2024.04  # Gunakan versi spesifik
     steps:
       - checkout
       - restore_cache:
