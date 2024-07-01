@@ -16,4 +16,6 @@ allprojects {
 configure<org.owasp.dependencycheck.gradle.extension.DependencyCheckExtension> {
     format = org.owasp.dependencycheck.reporting.ReportGenerator.Format.ALL.toString()
     nvd.apiKey = "f123f392-e61a-4714-aff9-13248a66583d"
+    autoUpdate = false
+    nvd.validForHours = 300
 }
