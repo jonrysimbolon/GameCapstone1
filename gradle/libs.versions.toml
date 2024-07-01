@@ -21,9 +21,6 @@ lifecycle-livedata = "2.8.2"
 ksp = "2.0.0-1.0.22"
 nav_version = "2.7.7"
 datastorePreferences = "1.1.1"
-jackson-bom = "2.16.1"
-commons-lang3 = "3.14.0"
-commons-text = "1.12.0"
 
 
 [libraries]
@@ -53,9 +50,6 @@ navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fr
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version" }
 navigation-dynamic-features-fragment = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "nav_version" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
-jackson-bom = { group = "com.fasterxml.jackson", name = "jackson-bom", version.ref = "jackson-bom" }
-commons-lang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commons-lang3" }
-commons-text = { group = "org.apache.commons", name = "commons-text", version.ref = "commons-text" }
 
 
 [plugins]

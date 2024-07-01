@@ -76,7 +76,4 @@ dependencies {
 
     api(libs.androidx.datastore.preferences)
 
-    api(platform(libs.jackson.bom))
-    api(libs.commons.lang3)
-    api(libs.commons.text)
 }
