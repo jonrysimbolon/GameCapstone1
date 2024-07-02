@@ -40,6 +40,14 @@ android {
         viewBinding = true
         buildConfig = true
     }
+
+    packaging {
+        resources {
+            excludes += "META-INF/INDEX.LIST"
+            excludes += "META-INF/io.netty.versions.properties"
+        }
+    }
+
 }
 
 dependencies {
@@ -75,4 +83,9 @@ dependencies {
     api(libs.lifecycle.livedata.ktx)
 
     api(libs.androidx.datastore.preferences)
+
+    api("org.jetbrains.kotlin:kotlin-stdlib:2.0.0")
+    api("io.netty:netty-handler:4.1.94.Final")
+    api("io.netty:netty-codec-http2:4.1.100.Final")
+    api("com.google.guava:guava:32.0.0-android")
 }
