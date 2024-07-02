@@ -76,4 +76,12 @@ dependencies {
 
     api(libs.androidx.datastore.preferences)
 
+
+    /*implementation("com.android.tools.utp:android-test-plugin-host-retention:31.5.0")
+    implementation("io.grpc:grpc-netty:1.57.0")
+    implementation("io.netty:netty-handler:4.1.94.Final")
+    implementation("io.netty:netty-codec-http2:4.1.100.Final")
+    implementation("io.netty:netty-codec-http:4.1.108.Final")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.20")
+    implementation("com.google.guava:guava:32.0.0-jre")*/
 }
