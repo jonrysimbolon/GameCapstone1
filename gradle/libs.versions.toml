@@ -22,6 +22,11 @@ ksp = "2.0.0-1.0.22"
 nav_version = "2.7.7"
 datastorePreferences = "1.1.1"
 
+netty-handler = "4.1.94.Final"
+netty-codec-http = "4.1.108.Final"
+netty-codec-http2 = "4.1.100.Final"
+guava = "32.0.0-android"
+
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "test-ext-junit" }
@@ -49,6 +54,11 @@ navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fr
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version" }
 navigation-dynamic-features-fragment = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "nav_version" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+
+netty-handler = { module = "io.netty:netty-handler", version.ref = "netty-handler" }
+netty-codec-http = { module = "io.netty:netty-codec-http", version.ref = "netty-codec-http" }
+netty-codec-http2 = { module = "io.netty:netty-codec-http2", version.ref = "netty-codec-http2" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

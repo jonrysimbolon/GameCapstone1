@@ -71,7 +71,9 @@ dependencies {
 
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
-    ksp(libs.room.compiler)
+    ksp(libs.room.compiler)/*{
+        exclude(group = "com.google.guava", module = "guava")
+    }*/
     androidTestImplementation(libs.room.test)
 
     api(libs.retrofit)
@@ -84,9 +86,8 @@ dependencies {
 
     api(libs.androidx.datastore.preferences)
 
-    api("org.jetbrains.kotlin:kotlin-stdlib:2.0.0")
-    api("io.netty:netty-handler:4.1.94.Final")
-    api("io.netty:netty-codec-http2:4.1.100.Final")
-    api("io.netty:netty-codec-http:4.1.108.Final")
-    api("com.google.guava:guava:32.0.0-android")
+    api(libs.netty.handler)
+    api(libs.netty.codec.http)
+    api(libs.netty.codec.http2)
+    api(libs.guava)
 }
