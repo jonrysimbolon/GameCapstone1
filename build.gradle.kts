@@ -36,7 +36,7 @@ allprojects {
 
             // Function to recursively print dependencies
             fun printDependencies(project: Project, depth: Int) {
-                val indentation = "\t - \t - \t".repeat(depth)
+                val indentation = "\t".repeat(depth)
                 project.configurations.forEach { configuration ->
                     htmlFile.appendText("${indentation}${project.name} - ${configuration.name}\n")
                     configuration.allDependencies.forEach { dependency ->
