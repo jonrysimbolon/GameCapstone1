@@ -26,6 +26,7 @@ netty-handler = "4.1.94.Final"
 netty-codec-http = "4.1.108.Final"
 netty-codec-http2 = "4.1.100.Final"
 guava = "32.0.0-android"
+kover = "0.8.2"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -67,3 +68,4 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }

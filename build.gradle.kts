@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.android.dynamic.feature) apply false
     alias(libs.plugins.jetbrains.kotlin.jvm) apply false
     alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.kover)
 }
 
 allprojects {
