@@ -6,11 +6,11 @@ import kotlinx.coroutines.flow.Flow
 
 class DigimonInteractor(private val digimonRepository: IDigimonRepository): DigimonUseCase {
 
-    override fun getAllDigimon() = digimonRepository.getAllDigimon()
+    override suspend fun getAllDigimon() = digimonRepository.getAllDigimon()
 
-    override fun getFavoriteDigimon() = digimonRepository.getFavoriteDigimon()
+    override suspend fun getFavoriteDigimon() = digimonRepository.getFavoriteDigimon()
 
     override suspend fun setFavoriteDigimon(digimon: Digimon, state: Boolean) = digimonRepository.setFavoriteDigimon(digimon, state)
 
-    override fun getDigimon(nama: String): Flow<Digimon> = digimonRepository.getDigimonByName(nama)
+    override suspend fun getDigimon(nama: String): Flow<Digimon> = digimonRepository.getDigimonByName(nama)
 }

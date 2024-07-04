@@ -6,12 +6,12 @@ import kotlinx.coroutines.flow.Flow
 
 interface IDigimonRepository {
 
-    fun getAllDigimon(): Flow<Resource<List<Digimon>>>
+    suspend fun getAllDigimon(): Flow<Resource<List<Digimon>>>
 
-    fun getFavoriteDigimon(): Flow<List<Digimon>>
+    suspend fun getFavoriteDigimon(): Flow<List<Digimon>>
 
     suspend fun setFavoriteDigimon(digimon: Digimon, state: Boolean)
 
-    fun getDigimonByName(name: String): Flow<Digimon>
+    suspend fun getDigimonByName(name: String): Flow<Digimon>
 
 }

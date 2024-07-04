@@ -38,14 +38,6 @@ class DetailActivity : AppCompatActivity() {
         detailViewModel.getDigimonByName(detailDigimon.name)
 
         with(binding) {
-            Glide.with(this@DetailActivity)
-                .load(detailDigimon.photo)
-                .diskCacheStrategy(DiskCacheStrategy.DATA)
-                .into(photoDetail)
-
-            namaValue.text = detailDigimon.name
-            levelValue.text = detailDigimon.level
-
             var isFav = detailDigimon.isFavorite
 
             fabLove.setOnClickListener {
@@ -57,6 +49,15 @@ class DetailActivity : AppCompatActivity() {
         detailViewModel.digimon.observe(this){
             if(it != null){
                 setFavFab(it.isFavorite)
+                binding.apply{
+                    Glide.with(this@DetailActivity)
+                        .load(detailDigimon.photo)
+                        .diskCacheStrategy(DiskCacheStrategy.DATA)
+                        .into(photoDetail)
+
+                    namaValue.text = detailDigimon.name
+                    levelValue.text = detailDigimon.level
+                }
             }
         }
     }

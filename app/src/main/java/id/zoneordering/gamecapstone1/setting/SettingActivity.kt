@@ -20,15 +20,16 @@ class SettingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.apply {
-            settingViewModel.getThemeSettings().observe(this@SettingActivity) { isDarkModeActive: Boolean ->
-                if (isDarkModeActive) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    switchTheme.isChecked = true
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    switchTheme.isChecked = false
+            settingViewModel.getThemeSettings()
+                .observe(this@SettingActivity) { isDarkModeActive: Boolean ->
+                    AppCompatDelegate.setDefaultNightMode(
+                        if (isDarkModeActive)
+                            AppCompatDelegate.MODE_NIGHT_YES
+                        else
+                            AppCompatDelegate.MODE_NIGHT_NO
+                    )
+                    switchTheme.isChecked = isDarkModeActive
                 }
-            }
 
             switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
                 settingViewModel.saveThemeSetting(isChecked)

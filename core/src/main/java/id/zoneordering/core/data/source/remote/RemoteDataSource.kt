@@ -1,18 +1,21 @@
 package id.zoneordering.core.data.source.remote
 
-import android.util.Log
 import id.zoneordering.core.data.source.remote.network.ApiResponse
 import id.zoneordering.core.data.source.remote.network.ApiService
 import id.zoneordering.core.data.source.remote.response.DigimonResponse
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import timber.log.Timber
 
-class RemoteDataSource(private val apiService: ApiService) {
+class RemoteDataSource(
+    private val apiService: ApiService,
+    private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
+) {
 
-    suspend fun getAllDigimon(): Flow<ApiResponse<List<DigimonResponse>>> {
-        //get data from remote api
+    fun getAllDigimon(): Flow<ApiResponse<List<DigimonResponse>>> {
         return flow {
             try {
                 val response = apiService.getList()
@@ -23,9 +26,9 @@ class RemoteDataSource(private val apiService: ApiService) {
                 }
             } catch (e : Exception){
                 emit(ApiResponse.Error(e.toString()))
-                Log.e("RemoteDataSource", e.toString())
+                Timber.e(e.toString())
             }
-        }.flowOn(Dispatchers.IO)
+        }.flowOn(ioDispatcher)
     }
 }
 

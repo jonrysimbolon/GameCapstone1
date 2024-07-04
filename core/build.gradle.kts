@@ -19,7 +19,14 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        debug {
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -62,7 +69,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     api(libs.material)
-    api(libs.glide)
+    implementation(libs.glide)
+    ksp(libs.ksp.glide)
 
     ////koin
     api(libs.koinCore)
@@ -82,6 +90,9 @@ dependencies {
     api(libs.kotlinx.coroutine.core)
     api(libs.kotlinx.coroutine.android)
     api(libs.lifecycle.livedata.ktx)
+
+    api(libs.timber)
+    api(libs.rootbeer.lib)
 
     api(libs.lottie)
     api(libs.androidx.datastore.preferences)

@@ -28,13 +28,12 @@ class FavoriteActivity : AppCompatActivity() {
         setContentView(binding.root)
         loadKoinModules(favoriteModule)
 
+        binding.rvDigimon.adapter = adapter
+
         favoriteViewModel.favoriteDigimon.observe(this) { digimon ->
 
-            if(digimon.isEmpty()){
-                binding.emptyDataLayout.root.visibility = View.VISIBLE
-            } else {
-                binding.emptyDataLayout.root.visibility = View.GONE
-            }
+            binding.emptyDataLayout.root.visibility = if (digimon.isEmpty())
+                View.VISIBLE else View.GONE
 
             adapter.apply {
                 setData(digimon)

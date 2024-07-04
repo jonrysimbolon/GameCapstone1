@@ -40,12 +40,10 @@ class DigimonAdapter : RecyclerView.Adapter<DigimonAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemListDigimonBinding.bind(itemView)
         fun bind(data: Digimon) {
-            with(binding) {
-                Glide.with(itemView.context)
-                    .load(data.photo)
-                    .diskCacheStrategy(DiskCacheStrategy.DATA)
-                    .into(ivItemImage)
-            }
+            Glide.with(itemView.context)
+                .load(data.photo)
+                .diskCacheStrategy(DiskCacheStrategy.DATA)
+                .into(binding.ivItemImage)
         }
 
         init {

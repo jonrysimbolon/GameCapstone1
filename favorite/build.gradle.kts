@@ -49,16 +49,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    implementation(libs.navigation.ui.ktx){
-        exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
-    }
-    implementation(libs.navigation.fragment.ktx){
-        exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
-    }
-    implementation(libs.navigation.dynamic.features.fragment){
-        exclude(group = "org.jetbrains.kotlin", module = "kotlin-stdlib")
-    }
+    implementation(libs.navigation.ui.ktx)
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.dynamic.features.fragment)
 
+    implementation(libs.glide)
+    ksp(libs.ksp.glide)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

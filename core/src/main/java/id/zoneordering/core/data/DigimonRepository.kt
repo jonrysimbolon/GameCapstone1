@@ -18,7 +18,7 @@ class DigimonRepository(
     private val localDataSource: LocalDataSource
 ) : IDigimonRepository {
 
-    override fun getAllDigimon(): Flow<Resource<List<Digimon>>> = flow {
+    override suspend fun getAllDigimon(): Flow<Resource<List<Digimon>>> = flow {
         emit(Resource.Loading())
 
         val localData = localDataSource.getAllDigimon().firstOrNull()?.let {
@@ -32,23 +32,24 @@ class DigimonRepository(
                 is ApiResponse.Success -> {
                     val digimonList = DataMapper.mapResponsesToEntities(response.data)
                     localDataSource.insertDigimon(digimonList)
-                    emitAll(localDataSource.getAllDigimon().map { Resource.Success(DataMapper.mapEntitiesToDomain(it)) })
+                    emitAll(
+                        localDataSource.getAllDigimon()
+                            .map { Resource.Success(DataMapper.mapEntitiesToDomain(it)) })
                 }
+
                 is ApiResponse.Error -> {
                     emit(Resource.Error(response.errorMessage))
                 }
 
-                else -> {
-                    emit(Resource.Error("Unexpected API response"))
+                is ApiResponse.Empty -> {
+                    emit(Resource.Error("Empty"))
                 }
             }
         }
     }
 
-    override fun getFavoriteDigimon(): Flow<List<Digimon>> {
-        return localDataSource.getFavoriteDigimon().map {
-           DataMapper.mapEntitiesToDomain(it)
-        }
+    override suspend fun getFavoriteDigimon(): Flow<List<Digimon>> = localDataSource.getFavoriteDigimon().map {
+        DataMapper.mapEntitiesToDomain(it)
     }
 
     override suspend fun setFavoriteDigimon(digimon: Digimon, state: Boolean) {
@@ -56,10 +57,9 @@ class DigimonRepository(
         localDataSource.setFavoriteDigimon(digimonEntity, state)
     }
 
-    override fun getDigimonByName(name: String): Flow<Digimon> {
-        return localDataSource.getDigimonByName(name).map {
+    override suspend fun getDigimonByName(name: String): Flow<Digimon> =
+        localDataSource.getDigimonByName(name).map {
             DataMapper.mapEntityToDomain(it)
         }
-    }
 }
 

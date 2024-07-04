@@ -8,16 +8,20 @@ import id.zoneordering.core.domain.model.Digimon
 import id.zoneordering.core.domain.usecase.DigimonUseCase
 import kotlinx.coroutines.launch
 
-class MainViewModel(private val digimonUseCase: DigimonUseCase): ViewModel() {
+class MainViewModel(private val digimonUseCase: DigimonUseCase) : ViewModel() {
 
     private val _listOfDigimon: MutableLiveData<Resource<List<Digimon>>> = MutableLiveData()
     val listOfDigimon: MutableLiveData<Resource<List<Digimon>>> get() = _listOfDigimon
 
-    fun getDigimon(){
-        viewModelScope.launch {
-            digimonUseCase.getAllDigimon().collect {
-                _listOfDigimon.postValue(it)
+    fun getDigimon() {
+        try {
+            viewModelScope.launch {
+                digimonUseCase.getAllDigimon().collect {
+                    _listOfDigimon.value = it
+                }
             }
+        }catch (e: Exception){
+            e.printStackTrace()
         }
     }
 }

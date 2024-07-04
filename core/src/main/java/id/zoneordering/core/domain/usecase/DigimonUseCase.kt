@@ -5,8 +5,8 @@ import id.zoneordering.core.domain.model.Digimon
 import kotlinx.coroutines.flow.Flow
 
 interface DigimonUseCase {
-    fun getAllDigimon(): Flow<Resource<List<Digimon>>>
-    fun getFavoriteDigimon(): Flow<List<Digimon>>
+    suspend fun getAllDigimon(): Flow<Resource<List<Digimon>>>
+    suspend fun getFavoriteDigimon(): Flow<List<Digimon>>
     suspend fun setFavoriteDigimon(digimon: Digimon, state: Boolean)
-    fun getDigimon(nama: String): Flow<Digimon>
+    suspend fun getDigimon(nama: String): Flow<Digimon>
 }
