@@ -23,7 +23,7 @@
         android:layout_above="@+id/tv_empty"
         android:layout_centerHorizontal="true"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="emptybox.json"
+        app:lottie_fileName="empty_box.json"
         app:lottie_loop="true" />
 
 </RelativeLayout>
