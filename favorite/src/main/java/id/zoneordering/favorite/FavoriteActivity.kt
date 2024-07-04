@@ -2,6 +2,7 @@ package id.zoneordering.favorite
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import id.zoneordering.core.ui.DigimonAdapter
 import id.zoneordering.favorite.databinding.ActivityFavoriteBinding
@@ -28,6 +29,13 @@ class FavoriteActivity : AppCompatActivity() {
         loadKoinModules(favoriteModule)
 
         favoriteViewModel.favoriteDigimon.observe(this) { digimon ->
+
+            if(digimon.isEmpty()){
+                binding.emptyDataLayout.root.visibility = View.VISIBLE
+            } else {
+                binding.emptyDataLayout.root.visibility = View.GONE
+            }
+
             adapter.apply {
                 setData(digimon)
                 onItemClick = { item ->

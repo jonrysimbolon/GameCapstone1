@@ -2,4 +2,5 @@
 <resources>
     <string name="image_description">photo</string>
     <string name="reload">Reload</string>
+    <string name="no_data">Empty data</string>
 </resources>

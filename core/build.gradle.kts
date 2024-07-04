@@ -14,6 +14,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+        buildConfigField("String", "DIGIMON_KEY", "\"D161m0n4pp\"")
     }
 
     buildTypes {
@@ -71,9 +72,7 @@ dependencies {
 
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
-    ksp(libs.room.compiler)/*{
-        exclude(group = "com.google.guava", module = "guava")
-    }*/
+    ksp(libs.room.compiler)
     androidTestImplementation(libs.room.test)
 
     api(libs.retrofit)
@@ -84,7 +83,11 @@ dependencies {
     api(libs.kotlinx.coroutine.android)
     api(libs.lifecycle.livedata.ktx)
 
+    api(libs.lottie)
     api(libs.androidx.datastore.preferences)
+    api(libs.android.database.sqlcipher)
+    api(libs.sqlite.ktx)
+    debugApi(libs.leakcanary.android)
 
     api(libs.netty.handler)
     api(libs.netty.codec.http)
