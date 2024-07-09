@@ -25,8 +25,8 @@
 </p>
 <h4 align="center">Riwayat</h4>
 
-| <img src="image/submission-1.png" alt="submission-1" height="300"> <img src="image/submission-2.png" alt="submission-2" height="300"> |
-  |---------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="image/submission-1.png" alt="submission-1" width="200"> <img src="image/submission-2.png" alt="submission-2" width="200"> |
+  |-------------------------------------------------------------------------------------------------------------------------------------|
 
 <p align="center">
     <img src="image/keterangan-bintang.png" alt="star-desc" height="400">
