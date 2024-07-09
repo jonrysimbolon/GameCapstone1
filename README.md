@@ -10,13 +10,8 @@
 
 # Screenshot
 
-| Name            | Picture                                                                     |
-  |-----------------|-----------------------------------------------------------------------------|
-  | List Digimon    | <img src="image/list-digimon.jpg" alt="drawing" width="300"/>               |
-  | Detail Digimon  | <img src="image/detail-digimon-un-favorite.jpg" alt="drawing" width="300"/> |
-  | List Favorite   | <img src="image/list-digimon-favorite.jpg" alt="drawing" width="300"/>      |
-  | Detail Favorite | <img src="image/detail-digimon-favorite.jpg" alt="drawing" width="300"/>    |
-  | Setting         | <img src="image/setting.jpg" alt="drawing" width="300"/>                    |
+| Picture | <img src="image/list-digimon.jpg" alt="drawing" width="300"/> <img src="image/detail-digimon-un-favorite.jpg" alt="drawing" width="300"/> <img src="image/list-digimon-favorite.jpg" alt="drawing" width="300"/> <img src="image/detail-digimon-favorite.jpg" alt="drawing" width="300"/>  <img src="image/setting.jpg" alt="drawing" width="300"/> |
+  |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 # 👀️ 🚀️ 🎉️
 
