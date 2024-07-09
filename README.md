@@ -16,7 +16,7 @@
 # 👀️ 🚀️ 🎉️
 
 <p align="center">
-    <img src="image/certificate-dicoding.png" alt="certificate" height="400">
+    <img src="image/certificate-dicoding.png" alt="certificate" height="500">
 </p>
 <h3 align="center">Certificate</h3>
 
@@ -25,15 +25,8 @@
 </p>
 <h4 align="center">Riwayat</h4>
 
-<p align="center">
-    <img src="image/submission-1.png" alt="submission-1" height="200">
-</p>
-<h4 align="center">Submission 1</h4>
-
-<p align="center">
-    <img src="image/submission-2.png" alt="submission-2" height="200">
-</p>
-<h4 align="center">Submission 2</h4>
+| <img src="image/submission-1.png" alt="submission-1" height="300"> <img src="image/submission-2.png" alt="submission-2" height="300"> |
+  |---------------------------------------------------------------------------------------------------------------------------------------|
 
 <p align="center">
     <img src="image/keterangan-bintang.png" alt="star-desc" height="400">
