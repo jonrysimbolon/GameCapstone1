@@ -16,7 +16,7 @@
 # 👀️ 🚀️ 🎉️
 
 <p align="center">
-    <img src="image/certificate-dicoding.png" alt="certificate" height="500">
+    <img src="image/certificate-dicoding.png" alt="certificate" height="400">
 </p>
 <h3 align="center">Certificate</h3>
 
@@ -27,18 +27,18 @@
     </div>
     <div style="flex: 1; text-align: right;">
         <div>
-            <img src="image/submission-1.png" alt="submission-1" height="300">
+            <img src="image/submission-1.png" alt="submission-1" height="200">
             <h4>Submission 1</h4>
         </div>
         <div>
-            <img src="image/submission-2.png" alt="submission-2" height="300">
+            <img src="image/submission-2.png" alt="submission-2" height="200">
             <h4>Submission 2</h4>
         </div>
     </div>
 </div>
 
 <p align="center">
-    <img src="image/keterangan-bintang.png" alt="star-desc" height="200">
+    <img src="image/keterangan-bintang.png" alt="star-desc" height="400">
 </p>
 <h4 align="center">Desc of star</h4>
 
