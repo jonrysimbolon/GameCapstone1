@@ -10,35 +10,35 @@
 
 # Screenshot
 
-| <img src="image/list-digimon.jpg" alt="drawing" height="500"/> <img src="image/detail-digimon-un-favorite.jpg" alt="drawing" height="500"/> <img src="image/list-digimon-favorite.jpg" alt="drawing" height="500"/> <img src="image/detail-digimon-favorite.jpg" alt="drawing" height="500"/>  <img src="image/setting.jpg" alt="drawing" height="500"/> |
+| <img src="image/list-digimon.jpg" alt="drawing" height="300"/> <img src="image/detail-digimon-un-favorite.jpg" alt="drawing" height="300"/> <img src="image/list-digimon-favorite.jpg" alt="drawing" height="300"/> <img src="image/detail-digimon-favorite.jpg" alt="drawing" height="300"/>  <img src="image/setting.jpg" alt="drawing" height="300"/> |
   |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 # 👀️ 🚀️ 🎉️
 
 <p align="center">
-    <img src="image/certificate-dicoding.png" alt="certificate" width="200">
+    <img src="image/certificate-dicoding.png" alt="certificate" height="500">
 </p>
 <h3 align="center">Certificate</h3>
 
 <div style="display: flex; align-items: center;">
     <div style="flex: 1; text-align: start;">
-        <img src="image/riwayat-submission.png" alt="riwayat-submission" width="200">
+        <img src="image/riwayat-submission.png" alt="riwayat-submission" height="500">
         <h4>Riwayat</h4>
     </div>
     <div style="flex: 1; text-align: right;">
         <div>
-            <img src="image/submission-1.png" alt="submission-1" width="200">
+            <img src="image/submission-1.png" alt="submission-1" height="500">
             <h4>Submission 1</h4>
         </div>
         <div>
-            <img src="image/submission-2.png" alt="submission-2" width="200">
+            <img src="image/submission-2.png" alt="submission-2" height="500">
             <h4>Submission 2</h4>
         </div>
     </div>
 </div>
 
 <p align="center">
-    <img src="image/keterangan-bintang.png" alt="star-desc" width="200">
+    <img src="image/keterangan-bintang.png" alt="star-desc" height="500">
 </p>
 <h4 align="center">Desc of star</h4>
 
