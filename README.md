@@ -10,8 +10,8 @@
 
 # Screenshot
 
-| <img src="image/list-digimon.jpg" alt="drawing" width="200"/> <img src="image/detail-digimon-un-favorite.jpg" alt="drawing" width="200"/> <img src="image/list-digimon-favorite.jpg" alt="drawing" width="200"/> <img src="image/detail-digimon-favorite.jpg" alt="drawing" width="200"/>  <img src="image/setting.jpg" alt="drawing" width="200"/> |
-  |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="image/list-digimon.jpg" alt="drawing" height="500"/> <img src="image/detail-digimon-un-favorite.jpg" alt="drawing" height="500"/> <img src="image/list-digimon-favorite.jpg" alt="drawing" height="500"/> <img src="image/detail-digimon-favorite.jpg" alt="drawing" height="500"/>  <img src="image/setting.jpg" alt="drawing" height="500"/> |
+  |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 # 👀️ 🚀️ 🎉️
 
