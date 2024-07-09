@@ -12,7 +12,7 @@
 
 | Name            | Picture                                                          |
   |-----------------|------------------------------------------------------------------|
-  | List Digimon    | ![listdigimon](image/list-digimon.jpg)                           |
+  | List Digimon    | <img src="image/list-digimon.jpg" alt="drawing" width="200"/>    |
   | Detail Digimon  | ![detaildigimonunfavorite](image/detail-digimon-un-favorite.jpg) |
   | List Favorite   | ![listdigimonfavorite](image/list-digimon-favorite.jpg)          |
   | Detail Favorite | ![detaildigimonfavorite](image/detail-digimon-favorite.jpg)      |
@@ -27,16 +27,16 @@
 
 <div style="display: flex; align-items: center;">
     <div style="flex: 1; text-align: start;">
-        <img width="500" src="image/riwayat-submission.png" alt="riwayat-submission">
+        <img src="image/riwayat-submission.png" alt="riwayat-submission">
         <h3>Riwayat</h3>
     </div>
     <div style="flex: 1; text-align: right;">
         <div>
-            <img width="400" src="image/submission-1.png" alt="submission-1">
+            <img src="image/submission-1.png" alt="submission-1">
             <h4>Submission 1</h4>
         </div>
         <div>
-            <img width="400" src="image/submission-2.png" alt="submission-2">
+            <img src="image/submission-2.png" alt="submission-2">
             <h4>Submission 2</h4>
         </div>
     </div>
