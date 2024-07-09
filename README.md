@@ -21,17 +21,17 @@
 <h3 align="center">Certificate</h3>
 
 <p align="center">
-    <img src="image/riwayat-submission.png" alt="riwayat-submission" height="400">
+    <img src="image/riwayat-submission.png" alt="riwayat-submission" height="300">
 </p>
 <h4 align="center">Riwayat</h4>
 
 <p align="center">
-    <img src="image/submission-1.png" alt="submission-1" height="400">
+    <img src="image/submission-1.png" alt="submission-1" height="200">
 </p>
 <h4 align="center">Submission 1</h4>
 
 <p align="center">
-    <img src="image/submission-2.png" alt="submission-2" height="400">
+    <img src="image/submission-2.png" alt="submission-2" height="200">
 </p>
 <h4 align="center">Submission 2</h4>
 
