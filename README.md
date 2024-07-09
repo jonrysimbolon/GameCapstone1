@@ -10,8 +10,8 @@
 
 # Screenshot
 
--  | Name            | Picture                                                          |
-  | --------------- | ---------------------------------------------------------------- |
+| Name            | Picture                                                          |
+  |-----------------|------------------------------------------------------------------|
   | List Digimon    | ![listdigimon](image/list-digimon.jpg)                           |
   | Detail Digimon  | ![detaildigimonunfavorite](image/detail-digimon-un-favorite.jpg) |
   | List Favorite   | ![listdigimonfavorite](image/list-digimon-favorite.jpg)          |
