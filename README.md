@@ -1,4 +1,4 @@
-# Game Capstone 1 android expert
+# Digimon for dicoding submission
 
 [![jonrysimbolon](https://circleci.com/gh/jonrysimbolon/GameCapstone1.svg?style=svg)](https://circleci.com/gh/jonrysimbolon/GameCapstone1)
 
