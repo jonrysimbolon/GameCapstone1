@@ -25,7 +25,7 @@
 </p>
 <h4 align="center">Riwayat</h4>
 
-| <img src="image/submission-1.png" alt="submission-1" width="300"> <img src="image/submission-2.png" alt="submission-2" width="300"> |
+| <img src="image/submission-1.png" alt="submission-1" width="350"> <img src="image/submission-2.png" alt="submission-2" width="350"> |
   |-------------------------------------------------------------------------------------------------------------------------------------|
 
 <p align="center">
