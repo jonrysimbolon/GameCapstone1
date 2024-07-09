@@ -20,22 +20,20 @@
 </p>
 <h3 align="center">Certificate</h3>
 
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1; text-align: start;">
-        <img src="image/riwayat-submission.png" alt="riwayat-submission" height="300">
-        <h4>Riwayat</h4>
-    </div>
-    <div style="flex: 1; text-align: right;">
-        <div>
-            <img src="image/submission-1.png" alt="submission-1" height="200">
-            <h4>Submission 1</h4>
-        </div>
-        <div>
-            <img src="image/submission-2.png" alt="submission-2" height="200">
-            <h4>Submission 2</h4>
-        </div>
-    </div>
-</div>
+<p align="center">
+    <img src="image/riwayat-submission.png" alt="riwayat-submission" height="400">
+</p>
+<h4 align="center">Riwayat</h4>
+
+<p align="center">
+    <img src="image/submission-1.png" alt="submission-1" height="400">
+</p>
+<h4 align="center">Submission 1</h4>
+
+<p align="center">
+    <img src="image/submission-2.png" alt="submission-2" height="400">
+</p>
+<h4 align="center">Submission 2</h4>
 
 <p align="center">
     <img src="image/keterangan-bintang.png" alt="star-desc" height="400">
