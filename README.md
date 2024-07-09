@@ -18,21 +18,21 @@
 <p align="center">
     <img src="image/certificate-dicoding.png" alt="certificate" height="500">
 </p>
-<h3 align="center">Certificate</h3>
+<h2 align="center">Certificate</h2>
 
 <p align="center">
     <img src="image/riwayat-submission.png" alt="riwayat-submission" height="300">
 </p>
-<h4 align="center">Riwayat</h4>
+<h2 align="center">Riwayat</h2>
 
 | <img src="image/submission-1.png" alt="submission-1" width="380"> <img src="image/submission-2.png" alt="submission-2" width="380"> |
   |-------------------------------------------------------------------------------------------------------------------------------------|
-<h4 align="center">Submission 1 & 2</h4>
+<h2 align="center">Submission 1 & 2</h4>
 
 <p align="center">
     <img src="image/keterangan-bintang.png" alt="star-desc" height="400">
 </p>
-<h4 align="center">Desc of star</h4>
+<h2 align="center">Desc of star</h2>
 
 # Certificate
 
